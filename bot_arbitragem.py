@@ -1,10 +1,10 @@
-﻿#!/usr/bin/env python3
+﻿#!/usr/bin/env python
 import os
 import time
 import json
 import logging
+import sys
 from web3 import Web3
-from web3.middleware import geth_poa_middleware
 from dotenv import load_dotenv
 
 # Configuração avançada de logging
@@ -18,7 +18,8 @@ logging.basicConfig(
 )
 
 # Carrega variáveis de ambiente
-load_dotenv()
+# Carregar o .env.local manualmente
+load_dotenv('.env.local')
 
 # Configurações
 BSC_RPC = os.getenv("BSC_RPC", "https://bsc-dataseed.binance.org/")
@@ -30,12 +31,25 @@ MAX_SLIPPAGE = os.getenv("MAX_SLIPPAGE", 1.0)  # Slippage máximo em porcentagem
 GAS_LIMIT = os.getenv("GAS_LIMIT", 250000)  # Limite de gás padrão
 GAS_MULTIPLIER = os.getenv("GAS_MULTIPLIER", 1.15)  # Multiplicador de gás para segurança
 
+# Configuração para redes POA (como BSC)
+def poa_middleware(make_request, w3):
+    def middleware(method, params):
+        if method in ('eth_getBlockByHash', 'eth_getBlockByNumber'):
+            response = make_request(method, params)
+            if response and 'result' in response and response['result']:
+                response['result']['proofOfAuthorityData'] = '0x' + '00' * 32
+            return response
+        return make_request(method, params)
+    return middleware
+
+
 # Conexão segura com timeout
-web3 = Web3(Web3.HTTPProvider(
+w3 = Web3(Web3.HTTPProvider(
     BSC_RPC,
     request_kwargs={'timeout': 45}
 ))
-web3.middleware_onion.inject(geth_poa_middleware, layer=0)
+
+w3.middleware_onion.inject(poa_middleware, layer=0)
 
 # Contratos verificados e confiáveis
 VERIFIED_CONTRACTS = {
@@ -54,11 +68,14 @@ ERC20_ABI = json.loads('[{"constant":true,"inputs":[{"name":"_owner","type":"add
 ROUTER_ABI = json.loads('[{"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"}],"name":"getAmountsOut","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"type":"function"}, {"inputs":[{"internalType":"uint256","name":"amountIn","type":"uint256"},{"internalType":"uint256","name":"amountOutMin","type":"uint256"},{"internalType":"address[]","name":"path","type":"address[]"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"deadline","type":"uint256"}],"name":"swapExactTokensForTokens","outputs":[{"internalType":"uint256[]","name":"amounts","type":"uint256[]"}],"type":"function"}]')
 
 # Inicializa contratos verificados
-router_pancake = web3.eth.contract(address=VERIFIED_CONTRACTS["DEX_ROUTERS"]["PancakeSwap"], abi=ROUTER_ABI)
-router_ape = web3.eth.contract(address=VERIFIED_CONTRACTS["DEX_ROUTERS"]["ApeSwap"], abi=ROUTER_ABI)
+router_pancake = w3.eth.contract(address=VERIFIED_CONTRACTS["DEX_ROUTERS"]["PancakeSwap"], abi=ROUTER_ABI)
+router_ape = w3.eth.contract(address=VERIFIED_CONTRACTS["DEX_ROUTERS"]["ApeSwap"], abi=ROUTER_ABI)
 
 # Monitor de transações pendentes
 pending_transactions = set()
+
+print(pending_transactions)
+sys.exit()
 
 def is_verified_contract(address):
     """Verifica se o contrato está na lista de verificados."""
@@ -71,7 +88,7 @@ def is_verified_contract(address):
 def is_connected():
     """Verifica conexão com a blockchain."""
     try:
-        return web3.is_connected() and web3.eth.get_block('latest')
+        return w3.is_connected() and w3.eth.get_block('latest')
     except Exception as e:
         logging.error(f"Erro de conexão: {str(e)}")
         return False
@@ -86,7 +103,7 @@ def get_balance(token_address):
             logging.warning(f"Tentativa de verificar saldo em contrato não verificado: {token_address}")
             return 0
             
-        contract = web3.eth.contract(address=token_address, abi=ERC20_ABI)
+        contract = w3.eth.contract(address=token_address, abi=ERC20_ABI)
         return contract.functions.balanceOf(WALLET_ADDRESS).call()
     except Exception as e:
         logging.error(f"Erro ao verificar saldo: {str(e)}")
@@ -99,7 +116,7 @@ def check_allowance(token_address, spender):
             logging.warning(f"Tentativa de verificar allowance em contrato não verificado")
             return 0
             
-        contract = web3.eth.contract(address=token_address, abi=ERC20_ABI)
+        contract = w3.eth.contract(address=token_address, abi=ERC20_ABI)
         return contract.functions.allowance(WALLET_ADDRESS, spender).call()
     except Exception as e:
         logging.error(f"Erro ao verificar allowance: {str(e)}")
@@ -116,16 +133,16 @@ def approve_token(token_address, spender, amount):
         if current_allowance >= amount:
             return True
             
-        contract = web3.eth.contract(address=token_address, abi=ERC20_ABI)
+        contract = w3.eth.contract(address=token_address, abi=ERC20_ABI)
         tx = contract.functions.approve(spender, amount).build_transaction({
             'from': WALLET_ADDRESS,
             'gas': GAS_LIMIT,
-            'gasPrice': int(web3.eth.gas_price * GAS_MULTIPLIER),
-            'nonce': web3.eth.getTransactionCount(WALLET_ADDRESS),
+            'gasPrice': int(w3.eth.gas_price * GAS_MULTIPLIER),
+            'nonce': w3.eth.getTransactionCount(WALLET_ADDRESS),
         })
         
-        signed_tx = web3.eth.account.sign_transaction(tx, PRIVATE_KEY)
-        tx_hash = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        signed_tx = w3.eth.account.sign_transaction(tx, PRIVATE_KEY)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         
         # Adiciona à lista de transações pendentes
         pending_transactions.add(tx_hash.hex())
@@ -149,7 +166,7 @@ def approve_token(token_address, spender, amount):
 def calculate_gas_cost():
     """Calcula custo em BNB e USDT com cache."""
     try:
-        gas_price = web3.eth.gas_price
+        gas_price = w3.eth.gas_price
         gas_cost_bnb = gas_price * GAS_LIMIT / 10**18
         
         # Obtém preço BNB/USDT
@@ -172,7 +189,7 @@ def get_price(router_address, token_in, token_out, amount_in):
             logging.warning(f"Tentativa de obter preço de contrato não verificado")
             return 0
             
-        router = web3.eth.contract(address=router_address, abi=ROUTER_ABI)
+        router = w3.eth.contract(address=router_address, abi=ROUTER_ABI)
         amounts = router.functions.getAmountsOut(
             amount_in,
             [token_in, token_out]
@@ -229,18 +246,18 @@ def execute_swap(router, token_in, token_out, amount_in, min_profit):
         ).build_transaction({
             'from': WALLET_ADDRESS,
             'gas': GAS_LIMIT,
-            'gasPrice': int(web3.eth.gas_price * GAS_MULTIPLIER),
-            'nonce': web3.eth.getTransactionCount(WALLET_ADDRESS),
+            'gasPrice': int(w3.eth.gas_price * GAS_MULTIPLIER),
+            'nonce': w3.eth.getTransactionCount(WALLET_ADDRESS),
         })
 
-        signed_tx = web3.eth.account.sign_transaction(tx, PRIVATE_KEY)
-        tx_hash = web3.eth.send_raw_transaction(signed_tx.rawTransaction)
+        signed_tx = w3.eth.account.sign_transaction(tx, PRIVATE_KEY)
+        tx_hash = w3.eth.send_raw_transaction(signed_tx.rawTransaction)
         
         # Adiciona à lista de transações pendentes
         pending_transactions.add(tx_hash.hex())
         
         # Espera pela confirmação
-        receipt = web3.eth.wait_for_transaction_receipt(tx_hash, timeout=120)
+        receipt = w3.eth.wait_for_transaction_receipt(tx_hash, timeout=120)
         pending_transactions.remove(tx_hash.hex())
         
         if receipt.status == 1:
@@ -261,7 +278,7 @@ def check_pending_transactions():
     try:
         for tx_hash in list(pending_transactions):
             try:
-                receipt = web3.eth.get_transaction_receipt(tx_hash)
+                receipt = w3.eth.get_transaction_receipt(tx_hash)
                 if receipt is not None:
                     pending_transactions.remove(tx_hash)
             except:

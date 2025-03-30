@@ -19,7 +19,8 @@ logging.basicConfig(
 )
 
 # Carrega variáveis de ambiente
-load_dotenv()
+# Carregar o .env.local manualmente
+load_dotenv('.env.local')
 
 # Configurações de segurança
 MAX_SLIPPAGE = 1.0  # 1% máxima
