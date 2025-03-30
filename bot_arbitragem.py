@@ -74,9 +74,6 @@ router_ape = w3.eth.contract(address=VERIFIED_CONTRACTS["DEX_ROUTERS"]["ApeSwap"
 # Monitor de transações pendentes
 pending_transactions = set()
 
-print(pending_transactions)
-sys.exit()
-
 def is_verified_contract(address):
     """Verifica se o contrato está na lista de verificados."""
     address = Web3.to_checksum_address(address)
