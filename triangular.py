@@ -83,6 +83,8 @@ def check_triangular_arbitrage():
         if len(set(path)) != len(path) - 1:  # permite apenas o primeiro e o último iguais
             continue
 
+        time.sleep(0.3) # Espera para evitar rate limit
+
         amounts = get_amounts_out_safe(amount_in, path)
         if amounts:
             final_amount = amounts[-1]
