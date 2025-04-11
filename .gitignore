@@ -1,4 +1,5 @@
 # Ignorar arquivos .env e .env.local
 .env
 .env.local
+.env.*
 /venv
