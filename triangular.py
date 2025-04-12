@@ -14,7 +14,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        RotatingFileHandler('/var/log/arbitrage.log', maxBytes=5 * 1024 * 1024, backupCount=3),
+        RotatingFileHandler('arbitrage.log', maxBytes=5 * 1024 * 1024, backupCount=3),
         logging.StreamHandler()
     ]
 )
@@ -83,7 +83,7 @@ def check_triangular_arbitrage():
         if len(set(path)) != len(path) - 1:  # permite apenas o primeiro e o último iguais
             continue
 
-        time.sleep(0.3) # Espera para evitar rate limit
+        time.sleep(1)  # Atraso para evitar chamadas excessivas à API
 
         amounts = get_amounts_out_safe(amount_in, path)
         if amounts:
@@ -99,7 +99,6 @@ if __name__ == "__main__":
     try:
         while True:
             check_triangular_arbitrage()
-            time.sleep(10)
+            time.sleep(15)
     except KeyboardInterrupt:
         logger.info("Execução interrompida pelo usuário.")
-

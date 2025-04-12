@@ -1,0 +1,1729 @@
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 134, in run
+    logger.info(f"Iniciando bot de arbitragem para {self.account.address}")
+Message: 'Iniciando bot de arbitragem para 0x6Ca56d0381c9dc5A11F77e820E8eBAbE29DfFa49'
+Arguments: ()
+2025-04-11 23:48:04,936 - INFO - Iniciando bot de arbitragem para 0x6Ca56d0381c9dc5A11F77e820E8eBAbE29DfFa49
+2025-04-11 23:48:05,506 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:48:05,506 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281419 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:48:05,651 - INFO - Conexão OK | Bloco: 48281419 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5122 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:48:06,478 - INFO - PancakeSwap: 58.5122 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:48:06,482 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281423 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:48:16,758 - INFO - Conexão OK | Bloco: 48281423 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5258 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:48:17,577 - INFO - PancakeSwap: 58.5258 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:48:17,581 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281426 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:48:27,850 - INFO - Conexão OK | Bloco: 48281426 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5246 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:48:28,651 - INFO - PancakeSwap: 58.5246 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:48:28,656 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 134, in run
+    logger.info(f"Iniciando bot de arbitragem para {self.account.address}")
+Message: 'Iniciando bot de arbitragem para 0x6Ca56d0381c9dc5A11F77e820E8eBAbE29DfFa49'
+Arguments: ()
+2025-04-11 23:48:39,258 - INFO - Iniciando bot de arbitragem para 0x6Ca56d0381c9dc5A11F77e820E8eBAbE29DfFa49
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281430 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:48:39,926 - INFO - Conexão OK | Bloco: 48281430 | BNB: 0.0668
+2025-04-11 23:48:40,037 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:48:40,037 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5197 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:48:40,758 - INFO - PancakeSwap: 58.5197 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:48:40,763 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281434 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:48:51,042 - INFO - Conexão OK | Bloco: 48281434 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5202 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:48:51,862 - INFO - PancakeSwap: 58.5202 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:48:51,867 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281438 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:49:02,143 - INFO - Conexão OK | Bloco: 48281438 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5177 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:49:02,963 - INFO - PancakeSwap: 58.5177 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:49:02,967 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281441 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:49:13,251 - INFO - Conexão OK | Bloco: 48281441 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5165 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:49:14,072 - INFO - PancakeSwap: 58.5165 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:49:14,077 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281445 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:49:24,357 - INFO - Conexão OK | Bloco: 48281445 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5200 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:49:25,182 - INFO - PancakeSwap: 58.5200 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:49:25,186 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:49:31,015 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:49:31,015 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281449 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:49:35,463 - INFO - Conexão OK | Bloco: 48281449 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5204 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:49:36,285 - INFO - PancakeSwap: 58.5204 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:49:36,289 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281452 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:49:46,571 - INFO - Conexão OK | Bloco: 48281452 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5195 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:49:47,396 - INFO - PancakeSwap: 58.5195 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:49:47,400 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281456 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:49:57,671 - INFO - Conexão OK | Bloco: 48281456 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5185 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:49:58,499 - INFO - PancakeSwap: 58.5185 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:49:58,503 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281460 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:50:08,781 - INFO - Conexão OK | Bloco: 48281460 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5185 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:50:09,608 - INFO - PancakeSwap: 58.5185 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:50:09,612 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281464 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:50:19,892 - INFO - Conexão OK | Bloco: 48281464 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5231 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:50:20,718 - INFO - PancakeSwap: 58.5231 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:50:20,722 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:50:21,952 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:50:21,952 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281467 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:50:30,998 - INFO - Conexão OK | Bloco: 48281467 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5232 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:50:31,835 - INFO - PancakeSwap: 58.5232 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:50:31,840 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281471 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:50:42,119 - INFO - Conexão OK | Bloco: 48281471 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5199 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:50:42,939 - INFO - PancakeSwap: 58.5199 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:50:42,944 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281475 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:50:53,221 - INFO - Conexão OK | Bloco: 48281475 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5177 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:50:54,044 - INFO - PancakeSwap: 58.5177 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:50:54,047 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281478 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:51:04,327 - INFO - Conexão OK | Bloco: 48281478 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5280 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:51:05,159 - INFO - PancakeSwap: 58.5280 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:51:05,162 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:51:12,900 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:51:12,900 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281482 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:51:15,440 - INFO - Conexão OK | Bloco: 48281482 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5031 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:51:16,263 - INFO - PancakeSwap: 58.5031 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:51:16,270 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281486 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:51:26,543 - INFO - Conexão OK | Bloco: 48281486 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.5016 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:51:27,374 - INFO - PancakeSwap: 58.5016 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:51:27,377 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281489 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:51:37,655 - INFO - Conexão OK | Bloco: 48281489 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.4999 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:51:38,469 - INFO - PancakeSwap: 58.4999 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:51:38,473 - INFO - Sem oportunidade de arbitragem no momento.
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 144, in run
+    logger.info(f"Conexão OK | Bloco: {health['block']} | BNB: {self.w3.from_wei(health['balance'], 'ether'):.4f}")
+Message: 'Conexão OK | Bloco: 48281493 | BNB: 0.0668'
+Arguments: ()
+2025-04-11 23:51:48,755 - INFO - Conexão OK | Bloco: 48281493 | BNB: 0.0668
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 123, in check_arbitrage
+    logger.info(f"PancakeSwap: {usdt_pancake:.4f} USDT | ApeSwap: {usdt_ape:.4f} USDT")
+Message: 'PancakeSwap: 58.4962 USDT | ApeSwap: 56.4750 USDT'
+Arguments: ()
+2025-04-11 23:51:49,576 - INFO - PancakeSwap: 58.4962 USDT | ApeSwap: 56.4750 USDT
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/logging/handlers.py", line 74, in emit
+    self.doRollover()
+  File "/usr/lib/python3.12/logging/handlers.py", line 179, in doRollover
+    self.rotate(self.baseFilename, dfn)
+  File "/usr/lib/python3.12/logging/handlers.py", line 115, in rotate
+    os.rename(source, dest)
+PermissionError: [Errno 13] Permission denied: '/var/log/arbitrage.log' -> '/var/log/arbitrage.log.1'
+Call stack:
+  File "/home/lucas/botPython/bot_arbitrage.py", line 159, in <module>
+    bot.run()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 145, in run
+    self.check_arbitrage()
+  File "/home/lucas/botPython/bot_arbitrage.py", line 129, in check_arbitrage
+    logger.info("Sem oportunidade de arbitragem no momento.")
+Message: 'Sem oportunidade de arbitragem no momento.'
+Arguments: ()
+2025-04-11 23:51:49,580 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:51:57,752 - INFO - Iniciando bot de arbitragem para 0x6Ca56d0381c9dc5A11F77e820E8eBAbE29DfFa49
+2025-04-11 23:51:57,752 - INFO - Iniciando bot de arbitragem para 0x6Ca56d0381c9dc5A11F77e820E8eBAbE29DfFa49
+2025-04-11 23:51:58,481 - INFO - Conexão OK | Bloco: 48281496 | BNB: 0.0668
+2025-04-11 23:51:58,481 - INFO - Conexão OK | Bloco: 48281496 | BNB: 0.0668
+2025-04-11 23:51:59,114 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:51:59,114 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:51:59,311 - INFO - PancakeSwap: 58.4957 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:51:59,311 - INFO - PancakeSwap: 58.4957 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:51:59,312 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:51:59,312 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:09,587 - INFO - Conexão OK | Bloco: 48281500 | BNB: 0.0668
+2025-04-11 23:52:09,587 - INFO - Conexão OK | Bloco: 48281500 | BNB: 0.0668
+2025-04-11 23:52:10,407 - INFO - PancakeSwap: 58.4956 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:10,407 - INFO - PancakeSwap: 58.4956 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:10,408 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:10,408 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:20,685 - INFO - Conexão OK | Bloco: 48281504 | BNB: 0.0668
+2025-04-11 23:52:20,685 - INFO - Conexão OK | Bloco: 48281504 | BNB: 0.0668
+2025-04-11 23:52:21,503 - INFO - PancakeSwap: 58.4956 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:21,503 - INFO - PancakeSwap: 58.4956 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:21,504 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:21,504 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:31,779 - INFO - Conexão OK | Bloco: 48281507 | BNB: 0.0668
+2025-04-11 23:52:31,779 - INFO - Conexão OK | Bloco: 48281507 | BNB: 0.0668
+2025-04-11 23:52:32,605 - INFO - PancakeSwap: 58.4987 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:32,605 - INFO - PancakeSwap: 58.4987 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:32,606 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:32,606 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:42,881 - INFO - Conexão OK | Bloco: 48281511 | BNB: 0.0668
+2025-04-11 23:52:42,881 - INFO - Conexão OK | Bloco: 48281511 | BNB: 0.0668
+2025-04-11 23:52:43,706 - INFO - PancakeSwap: 58.4794 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:43,706 - INFO - PancakeSwap: 58.4794 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:43,707 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:43,707 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:49,928 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:52:49,928 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:52:53,982 - INFO - Conexão OK | Bloco: 48281515 | BNB: 0.0668
+2025-04-11 23:52:53,982 - INFO - Conexão OK | Bloco: 48281515 | BNB: 0.0668
+2025-04-11 23:52:54,799 - INFO - PancakeSwap: 58.4761 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:54,799 - INFO - PancakeSwap: 58.4761 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:52:54,800 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:52:54,800 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:05,076 - INFO - Conexão OK | Bloco: 48281518 | BNB: 0.0668
+2025-04-11 23:53:05,076 - INFO - Conexão OK | Bloco: 48281518 | BNB: 0.0668
+2025-04-11 23:53:05,894 - INFO - PancakeSwap: 58.4772 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:05,894 - INFO - PancakeSwap: 58.4772 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:05,896 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:05,896 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:16,170 - INFO - Conexão OK | Bloco: 48281522 | BNB: 0.0668
+2025-04-11 23:53:16,170 - INFO - Conexão OK | Bloco: 48281522 | BNB: 0.0668
+2025-04-11 23:53:17,003 - INFO - PancakeSwap: 58.4771 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:17,003 - INFO - PancakeSwap: 58.4771 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:17,004 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:17,004 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:27,282 - INFO - Conexão OK | Bloco: 48281526 | BNB: 0.0668
+2025-04-11 23:53:27,282 - INFO - Conexão OK | Bloco: 48281526 | BNB: 0.0668
+2025-04-11 23:53:28,102 - INFO - PancakeSwap: 58.4752 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:28,102 - INFO - PancakeSwap: 58.4752 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:28,103 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:28,103 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:38,380 - INFO - Conexão OK | Bloco: 48281530 | BNB: 0.0668
+2025-04-11 23:53:38,380 - INFO - Conexão OK | Bloco: 48281530 | BNB: 0.0668
+2025-04-11 23:53:39,202 - INFO - PancakeSwap: 58.4716 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:39,202 - INFO - PancakeSwap: 58.4716 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:39,204 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:39,204 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:40,772 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:53:40,772 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:53:49,473 - INFO - Conexão OK | Bloco: 48281533 | BNB: 0.0668
+2025-04-11 23:53:49,473 - INFO - Conexão OK | Bloco: 48281533 | BNB: 0.0668
+2025-04-11 23:53:50,297 - INFO - PancakeSwap: 58.4694 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:50,297 - INFO - PancakeSwap: 58.4694 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:53:50,298 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:53:50,298 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:00,567 - INFO - Conexão OK | Bloco: 48281537 | BNB: 0.0668
+2025-04-11 23:54:00,567 - INFO - Conexão OK | Bloco: 48281537 | BNB: 0.0668
+2025-04-11 23:54:01,379 - INFO - PancakeSwap: 58.4698 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:01,379 - INFO - PancakeSwap: 58.4698 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:01,380 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:01,380 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:11,670 - INFO - Conexão OK | Bloco: 48281541 | BNB: 0.0668
+2025-04-11 23:54:11,670 - INFO - Conexão OK | Bloco: 48281541 | BNB: 0.0668
+2025-04-11 23:54:12,486 - INFO - PancakeSwap: 58.4748 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:12,486 - INFO - PancakeSwap: 58.4748 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:12,487 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:12,487 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:22,762 - INFO - Conexão OK | Bloco: 48281544 | BNB: 0.0668
+2025-04-11 23:54:22,762 - INFO - Conexão OK | Bloco: 48281544 | BNB: 0.0668
+2025-04-11 23:54:23,583 - INFO - PancakeSwap: 58.4727 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:23,583 - INFO - PancakeSwap: 58.4727 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:23,584 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:23,584 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:31,572 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:54:31,572 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:54:33,859 - INFO - Conexão OK | Bloco: 48281548 | BNB: 0.0668
+2025-04-11 23:54:33,859 - INFO - Conexão OK | Bloco: 48281548 | BNB: 0.0668
+2025-04-11 23:54:34,675 - INFO - PancakeSwap: 58.4709 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:34,675 - INFO - PancakeSwap: 58.4709 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:34,675 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:34,675 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:44,953 - INFO - Conexão OK | Bloco: 48281552 | BNB: 0.0668
+2025-04-11 23:54:44,953 - INFO - Conexão OK | Bloco: 48281552 | BNB: 0.0668
+2025-04-11 23:54:45,773 - INFO - PancakeSwap: 58.4846 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:45,773 - INFO - PancakeSwap: 58.4846 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:45,775 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:45,775 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:56,055 - INFO - Conexão OK | Bloco: 48281555 | BNB: 0.0668
+2025-04-11 23:54:56,055 - INFO - Conexão OK | Bloco: 48281555 | BNB: 0.0668
+2025-04-11 23:54:56,881 - INFO - PancakeSwap: 58.4841 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:56,881 - INFO - PancakeSwap: 58.4841 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:54:56,882 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:54:56,882 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:07,158 - INFO - Conexão OK | Bloco: 48281559 | BNB: 0.0668
+2025-04-11 23:55:07,158 - INFO - Conexão OK | Bloco: 48281559 | BNB: 0.0668
+2025-04-11 23:55:07,979 - INFO - PancakeSwap: 58.4844 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:07,979 - INFO - PancakeSwap: 58.4844 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:07,980 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:07,980 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:18,259 - INFO - Conexão OK | Bloco: 48281563 | BNB: 0.0668
+2025-04-11 23:55:18,259 - INFO - Conexão OK | Bloco: 48281563 | BNB: 0.0668
+2025-04-11 23:55:19,084 - INFO - PancakeSwap: 58.4831 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:19,084 - INFO - PancakeSwap: 58.4831 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:19,085 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:19,085 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:22,405 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:55:22,405 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:55:29,360 - INFO - Conexão OK | Bloco: 48281566 | BNB: 0.0668
+2025-04-11 23:55:29,360 - INFO - Conexão OK | Bloco: 48281566 | BNB: 0.0668
+2025-04-11 23:55:30,174 - INFO - PancakeSwap: 58.4834 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:30,174 - INFO - PancakeSwap: 58.4834 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:30,175 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:30,175 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:40,452 - INFO - Conexão OK | Bloco: 48281570 | BNB: 0.0668
+2025-04-11 23:55:40,452 - INFO - Conexão OK | Bloco: 48281570 | BNB: 0.0668
+2025-04-11 23:55:41,273 - INFO - PancakeSwap: 58.4794 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:41,273 - INFO - PancakeSwap: 58.4794 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:41,274 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:41,274 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:51,550 - INFO - Conexão OK | Bloco: 48281574 | BNB: 0.0668
+2025-04-11 23:55:51,550 - INFO - Conexão OK | Bloco: 48281574 | BNB: 0.0668
+2025-04-11 23:55:52,373 - INFO - PancakeSwap: 58.4800 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:52,373 - INFO - PancakeSwap: 58.4800 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:55:52,374 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:55:52,374 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:02,647 - INFO - Conexão OK | Bloco: 48281578 | BNB: 0.0668
+2025-04-11 23:56:02,647 - INFO - Conexão OK | Bloco: 48281578 | BNB: 0.0668
+2025-04-11 23:56:03,470 - INFO - PancakeSwap: 58.4800 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:03,470 - INFO - PancakeSwap: 58.4800 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:03,471 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:03,471 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:13,233 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:56:13,233 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:56:13,747 - INFO - Conexão OK | Bloco: 48281581 | BNB: 0.0668
+2025-04-11 23:56:13,747 - INFO - Conexão OK | Bloco: 48281581 | BNB: 0.0668
+2025-04-11 23:56:14,562 - INFO - PancakeSwap: 58.4787 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:14,562 - INFO - PancakeSwap: 58.4787 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:14,564 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:14,564 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:24,833 - INFO - Conexão OK | Bloco: 48281585 | BNB: 0.0668
+2025-04-11 23:56:24,833 - INFO - Conexão OK | Bloco: 48281585 | BNB: 0.0668
+2025-04-11 23:56:25,636 - INFO - PancakeSwap: 58.4802 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:25,636 - INFO - PancakeSwap: 58.4802 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:25,637 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:25,637 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:35,913 - INFO - Conexão OK | Bloco: 48281589 | BNB: 0.0668
+2025-04-11 23:56:35,913 - INFO - Conexão OK | Bloco: 48281589 | BNB: 0.0668
+2025-04-11 23:56:36,731 - INFO - PancakeSwap: 58.4798 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:36,731 - INFO - PancakeSwap: 58.4798 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:36,732 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:36,732 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:47,018 - INFO - Conexão OK | Bloco: 48281592 | BNB: 0.0668
+2025-04-11 23:56:47,018 - INFO - Conexão OK | Bloco: 48281592 | BNB: 0.0668
+2025-04-11 23:56:47,835 - INFO - PancakeSwap: 58.4804 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:47,835 - INFO - PancakeSwap: 58.4804 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:47,836 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:47,836 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:58,116 - INFO - Conexão OK | Bloco: 48281596 | BNB: 0.0668
+2025-04-11 23:56:58,116 - INFO - Conexão OK | Bloco: 48281596 | BNB: 0.0668
+2025-04-11 23:56:58,935 - INFO - PancakeSwap: 58.4760 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:58,935 - INFO - PancakeSwap: 58.4760 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:56:58,937 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:56:58,937 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:04,001 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:57:04,001 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:57:09,232 - INFO - Conexão OK | Bloco: 48281601 | BNB: 0.0668
+2025-04-11 23:57:09,232 - INFO - Conexão OK | Bloco: 48281601 | BNB: 0.0668
+2025-04-11 23:57:10,049 - INFO - PancakeSwap: 58.4774 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:10,049 - INFO - PancakeSwap: 58.4774 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:10,050 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:10,050 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:20,321 - INFO - Conexão OK | Bloco: 48281604 | BNB: 0.0668
+2025-04-11 23:57:20,321 - INFO - Conexão OK | Bloco: 48281604 | BNB: 0.0668
+2025-04-11 23:57:21,146 - INFO - PancakeSwap: 58.4759 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:21,146 - INFO - PancakeSwap: 58.4759 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:21,147 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:21,147 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:31,427 - INFO - Conexão OK | Bloco: 48281607 | BNB: 0.0668
+2025-04-11 23:57:31,427 - INFO - Conexão OK | Bloco: 48281607 | BNB: 0.0668
+2025-04-11 23:57:32,244 - INFO - PancakeSwap: 58.4761 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:32,244 - INFO - PancakeSwap: 58.4761 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:32,245 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:32,245 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:42,527 - INFO - Conexão OK | Bloco: 48281612 | BNB: 0.0668
+2025-04-11 23:57:42,527 - INFO - Conexão OK | Bloco: 48281612 | BNB: 0.0668
+2025-04-11 23:57:43,348 - INFO - PancakeSwap: 58.4763 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:43,348 - INFO - PancakeSwap: 58.4763 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:43,349 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:43,349 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:53,625 - INFO - Conexão OK | Bloco: 48281615 | BNB: 0.0668
+2025-04-11 23:57:53,625 - INFO - Conexão OK | Bloco: 48281615 | BNB: 0.0668
+2025-04-11 23:57:54,449 - INFO - PancakeSwap: 58.4762 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:54,449 - INFO - PancakeSwap: 58.4762 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:57:54,450 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:54,450 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:57:54,849 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:57:54,849 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:58:04,725 - INFO - Conexão OK | Bloco: 48281619 | BNB: 0.0668
+2025-04-11 23:58:04,725 - INFO - Conexão OK | Bloco: 48281619 | BNB: 0.0668
+2025-04-11 23:58:05,548 - INFO - PancakeSwap: 58.4762 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:05,548 - INFO - PancakeSwap: 58.4762 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:05,549 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:05,549 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:15,845 - INFO - Conexão OK | Bloco: 48281623 | BNB: 0.0668
+2025-04-11 23:58:15,845 - INFO - Conexão OK | Bloco: 48281623 | BNB: 0.0668
+2025-04-11 23:58:16,661 - INFO - PancakeSwap: 58.4796 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:16,661 - INFO - PancakeSwap: 58.4796 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:16,663 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:16,663 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:26,935 - INFO - Conexão OK | Bloco: 48281626 | BNB: 0.0668
+2025-04-11 23:58:26,935 - INFO - Conexão OK | Bloco: 48281626 | BNB: 0.0668
+2025-04-11 23:58:27,758 - INFO - PancakeSwap: 58.4793 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:27,758 - INFO - PancakeSwap: 58.4793 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:27,759 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:27,759 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:38,038 - INFO - Conexão OK | Bloco: 48281630 | BNB: 0.0668
+2025-04-11 23:58:38,038 - INFO - Conexão OK | Bloco: 48281630 | BNB: 0.0668
+2025-04-11 23:58:38,863 - INFO - PancakeSwap: 58.4789 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:38,863 - INFO - PancakeSwap: 58.4789 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:38,865 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:38,865 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:45,674 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:58:45,674 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:58:49,139 - INFO - Conexão OK | Bloco: 48281634 | BNB: 0.0668
+2025-04-11 23:58:49,139 - INFO - Conexão OK | Bloco: 48281634 | BNB: 0.0668
+2025-04-11 23:58:49,956 - INFO - PancakeSwap: 58.4720 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:49,956 - INFO - PancakeSwap: 58.4720 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:58:49,957 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:58:49,957 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:00,230 - INFO - Conexão OK | Bloco: 48281638 | BNB: 0.0668
+2025-04-11 23:59:00,230 - INFO - Conexão OK | Bloco: 48281638 | BNB: 0.0668
+2025-04-11 23:59:01,049 - INFO - PancakeSwap: 58.4720 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:01,049 - INFO - PancakeSwap: 58.4720 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:01,050 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:01,050 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:11,323 - INFO - Conexão OK | Bloco: 48281641 | BNB: 0.0668
+2025-04-11 23:59:11,323 - INFO - Conexão OK | Bloco: 48281641 | BNB: 0.0668
+2025-04-11 23:59:12,148 - INFO - PancakeSwap: 58.4734 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:12,148 - INFO - PancakeSwap: 58.4734 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:12,148 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:12,148 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:22,427 - INFO - Conexão OK | Bloco: 48281645 | BNB: 0.0668
+2025-04-11 23:59:22,427 - INFO - Conexão OK | Bloco: 48281645 | BNB: 0.0668
+2025-04-11 23:59:23,250 - INFO - PancakeSwap: 58.4726 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:23,250 - INFO - PancakeSwap: 58.4726 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:23,251 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:23,251 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:33,527 - INFO - Conexão OK | Bloco: 48281649 | BNB: 0.0668
+2025-04-11 23:59:33,527 - INFO - Conexão OK | Bloco: 48281649 | BNB: 0.0668
+2025-04-11 23:59:34,349 - INFO - PancakeSwap: 58.4735 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:34,349 - INFO - PancakeSwap: 58.4735 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:34,349 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:34,349 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:36,482 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:59:36,482 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-11 23:59:44,623 - INFO - Conexão OK | Bloco: 48281652 | BNB: 0.0668
+2025-04-11 23:59:44,623 - INFO - Conexão OK | Bloco: 48281652 | BNB: 0.0668
+2025-04-11 23:59:45,434 - INFO - PancakeSwap: 58.4749 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:45,434 - INFO - PancakeSwap: 58.4749 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:45,435 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:45,435 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:55,708 - INFO - Conexão OK | Bloco: 48281656 | BNB: 0.0668
+2025-04-11 23:59:55,708 - INFO - Conexão OK | Bloco: 48281656 | BNB: 0.0668
+2025-04-11 23:59:56,527 - INFO - PancakeSwap: 58.4757 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:56,527 - INFO - PancakeSwap: 58.4757 USDT | ApeSwap: 56.4750 USDT
+2025-04-11 23:59:56,528 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-11 23:59:56,528 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:06,812 - INFO - Conexão OK | Bloco: 48281660 | BNB: 0.0668
+2025-04-12 00:00:06,812 - INFO - Conexão OK | Bloco: 48281660 | BNB: 0.0668
+2025-04-12 00:00:07,633 - INFO - PancakeSwap: 58.4716 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:07,633 - INFO - PancakeSwap: 58.4716 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:07,634 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:07,634 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:17,911 - INFO - Conexão OK | Bloco: 48281663 | BNB: 0.0668
+2025-04-12 00:00:17,911 - INFO - Conexão OK | Bloco: 48281663 | BNB: 0.0668
+2025-04-12 00:00:18,727 - INFO - PancakeSwap: 58.4728 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:18,727 - INFO - PancakeSwap: 58.4728 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:18,729 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:18,729 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:27,390 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:00:27,390 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:00:29,005 - INFO - Conexão OK | Bloco: 48281666 | BNB: 0.0668
+2025-04-12 00:00:29,005 - INFO - Conexão OK | Bloco: 48281666 | BNB: 0.0668
+2025-04-12 00:00:29,824 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:29,824 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:29,825 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:29,825 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:40,101 - INFO - Conexão OK | Bloco: 48281671 | BNB: 0.0668
+2025-04-12 00:00:40,101 - INFO - Conexão OK | Bloco: 48281671 | BNB: 0.0668
+2025-04-12 00:00:40,921 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:40,921 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:40,922 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:40,922 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:51,193 - INFO - Conexão OK | Bloco: 48281675 | BNB: 0.0668
+2025-04-12 00:00:51,193 - INFO - Conexão OK | Bloco: 48281675 | BNB: 0.0668
+2025-04-12 00:00:52,012 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:52,012 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:00:52,013 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:00:52,013 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:02,289 - INFO - Conexão OK | Bloco: 48281678 | BNB: 0.0668
+2025-04-12 00:01:02,289 - INFO - Conexão OK | Bloco: 48281678 | BNB: 0.0668
+2025-04-12 00:01:03,112 - INFO - PancakeSwap: 58.4598 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:03,112 - INFO - PancakeSwap: 58.4598 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:03,113 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:03,113 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:13,390 - INFO - Conexão OK | Bloco: 48281682 | BNB: 0.0668
+2025-04-12 00:01:13,390 - INFO - Conexão OK | Bloco: 48281682 | BNB: 0.0668
+2025-04-12 00:01:14,203 - INFO - PancakeSwap: 58.4602 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:14,203 - INFO - PancakeSwap: 58.4602 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:14,204 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:14,204 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:18,176 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:01:18,176 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:01:24,481 - INFO - Conexão OK | Bloco: 48281686 | BNB: 0.0668
+2025-04-12 00:01:24,481 - INFO - Conexão OK | Bloco: 48281686 | BNB: 0.0668
+2025-04-12 00:01:25,297 - INFO - PancakeSwap: 58.4604 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:25,297 - INFO - PancakeSwap: 58.4604 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:25,298 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:25,298 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:35,575 - INFO - Conexão OK | Bloco: 48281689 | BNB: 0.0668
+2025-04-12 00:01:35,575 - INFO - Conexão OK | Bloco: 48281689 | BNB: 0.0668
+2025-04-12 00:01:36,394 - INFO - PancakeSwap: 58.4598 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:36,394 - INFO - PancakeSwap: 58.4598 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:36,395 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:36,395 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:46,671 - INFO - Conexão OK | Bloco: 48281693 | BNB: 0.0668
+2025-04-12 00:01:46,671 - INFO - Conexão OK | Bloco: 48281693 | BNB: 0.0668
+2025-04-12 00:01:47,494 - INFO - PancakeSwap: 58.4615 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:47,494 - INFO - PancakeSwap: 58.4615 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:47,495 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:47,495 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:57,772 - INFO - Conexão OK | Bloco: 48281697 | BNB: 0.0668
+2025-04-12 00:01:57,772 - INFO - Conexão OK | Bloco: 48281697 | BNB: 0.0668
+2025-04-12 00:01:58,591 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:58,591 - INFO - PancakeSwap: 58.4626 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:01:58,592 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:01:58,592 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:08,869 - INFO - Conexão OK | Bloco: 48281700 | BNB: 0.0668
+2025-04-12 00:02:08,869 - INFO - Conexão OK | Bloco: 48281700 | BNB: 0.0668
+2025-04-12 00:02:09,011 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:02:09,011 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:02:09,691 - INFO - PancakeSwap: 58.4625 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:09,691 - INFO - PancakeSwap: 58.4625 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:09,692 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:09,692 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:19,973 - INFO - Conexão OK | Bloco: 48281704 | BNB: 0.0668
+2025-04-12 00:02:19,973 - INFO - Conexão OK | Bloco: 48281704 | BNB: 0.0668
+2025-04-12 00:02:20,790 - INFO - PancakeSwap: 58.4664 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:20,790 - INFO - PancakeSwap: 58.4664 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:20,791 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:20,791 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:31,064 - INFO - Conexão OK | Bloco: 48281708 | BNB: 0.0668
+2025-04-12 00:02:31,064 - INFO - Conexão OK | Bloco: 48281708 | BNB: 0.0668
+2025-04-12 00:02:31,876 - INFO - PancakeSwap: 58.4697 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:31,876 - INFO - PancakeSwap: 58.4697 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:31,877 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:31,877 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:42,153 - INFO - Conexão OK | Bloco: 48281711 | BNB: 0.0668
+2025-04-12 00:02:42,153 - INFO - Conexão OK | Bloco: 48281711 | BNB: 0.0668
+2025-04-12 00:02:42,966 - INFO - PancakeSwap: 58.4692 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:42,966 - INFO - PancakeSwap: 58.4692 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:42,967 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:42,967 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:53,246 - INFO - Conexão OK | Bloco: 48281715 | BNB: 0.0668
+2025-04-12 00:02:53,246 - INFO - Conexão OK | Bloco: 48281715 | BNB: 0.0668
+2025-04-12 00:02:54,069 - INFO - PancakeSwap: 58.4746 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:54,069 - INFO - PancakeSwap: 58.4746 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:02:54,070 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:54,070 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:02:59,914 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:02:59,914 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:03:04,347 - INFO - Conexão OK | Bloco: 48281719 | BNB: 0.0668
+2025-04-12 00:03:04,347 - INFO - Conexão OK | Bloco: 48281719 | BNB: 0.0668
+2025-04-12 00:03:05,168 - INFO - PancakeSwap: 58.4760 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:05,168 - INFO - PancakeSwap: 58.4760 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:05,169 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:05,169 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:15,443 - INFO - Conexão OK | Bloco: 48281722 | BNB: 0.0668
+2025-04-12 00:03:15,443 - INFO - Conexão OK | Bloco: 48281722 | BNB: 0.0668
+2025-04-12 00:03:16,287 - INFO - PancakeSwap: 58.4816 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:16,287 - INFO - PancakeSwap: 58.4816 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:16,288 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:16,288 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:26,557 - INFO - Conexão OK | Bloco: 48281726 | BNB: 0.0668
+2025-04-12 00:03:26,557 - INFO - Conexão OK | Bloco: 48281726 | BNB: 0.0668
+2025-04-12 00:03:27,375 - INFO - PancakeSwap: 58.4824 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:27,375 - INFO - PancakeSwap: 58.4824 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:27,377 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:27,377 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:37,651 - INFO - Conexão OK | Bloco: 48281730 | BNB: 0.0668
+2025-04-12 00:03:37,651 - INFO - Conexão OK | Bloco: 48281730 | BNB: 0.0668
+2025-04-12 00:03:38,465 - INFO - PancakeSwap: 58.4766 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:38,465 - INFO - PancakeSwap: 58.4766 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:38,466 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:38,466 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:48,744 - INFO - Conexão OK | Bloco: 48281734 | BNB: 0.0668
+2025-04-12 00:03:48,744 - INFO - Conexão OK | Bloco: 48281734 | BNB: 0.0668
+2025-04-12 00:03:49,565 - INFO - PancakeSwap: 58.4870 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:49,565 - INFO - PancakeSwap: 58.4870 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:03:49,565 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:49,565 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:03:50,726 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:03:50,726 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:03:59,848 - INFO - Conexão OK | Bloco: 48281737 | BNB: 0.0668
+2025-04-12 00:03:59,848 - INFO - Conexão OK | Bloco: 48281737 | BNB: 0.0668
+2025-04-12 00:04:00,669 - INFO - PancakeSwap: 58.4878 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:00,669 - INFO - PancakeSwap: 58.4878 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:00,670 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:00,670 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:10,948 - INFO - Conexão OK | Bloco: 48281741 | BNB: 0.0668
+2025-04-12 00:04:10,948 - INFO - Conexão OK | Bloco: 48281741 | BNB: 0.0668
+2025-04-12 00:04:11,760 - INFO - PancakeSwap: 58.4994 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:11,760 - INFO - PancakeSwap: 58.4994 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:11,760 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:11,760 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:22,036 - INFO - Conexão OK | Bloco: 48281745 | BNB: 0.0668
+2025-04-12 00:04:22,036 - INFO - Conexão OK | Bloco: 48281745 | BNB: 0.0668
+2025-04-12 00:04:22,855 - INFO - PancakeSwap: 58.5025 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:22,855 - INFO - PancakeSwap: 58.5025 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:22,856 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:22,856 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:33,133 - INFO - Conexão OK | Bloco: 48281748 | BNB: 0.0668
+2025-04-12 00:04:33,133 - INFO - Conexão OK | Bloco: 48281748 | BNB: 0.0668
+2025-04-12 00:04:33,949 - INFO - PancakeSwap: 58.5059 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:33,949 - INFO - PancakeSwap: 58.5059 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:33,950 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:33,950 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:41,536 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:04:41,536 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:04:44,223 - INFO - Conexão OK | Bloco: 48281752 | BNB: 0.0668
+2025-04-12 00:04:44,223 - INFO - Conexão OK | Bloco: 48281752 | BNB: 0.0668
+2025-04-12 00:04:45,052 - INFO - PancakeSwap: 58.5044 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:45,052 - INFO - PancakeSwap: 58.5044 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:45,053 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:45,053 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:55,329 - INFO - Conexão OK | Bloco: 48281756 | BNB: 0.0668
+2025-04-12 00:04:55,329 - INFO - Conexão OK | Bloco: 48281756 | BNB: 0.0668
+2025-04-12 00:04:56,146 - INFO - PancakeSwap: 58.5058 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:56,146 - INFO - PancakeSwap: 58.5058 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:04:56,147 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:04:56,147 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:06,423 - INFO - Conexão OK | Bloco: 48281759 | BNB: 0.0668
+2025-04-12 00:05:06,423 - INFO - Conexão OK | Bloco: 48281759 | BNB: 0.0668
+2025-04-12 00:05:07,237 - INFO - PancakeSwap: 58.5025 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:07,237 - INFO - PancakeSwap: 58.5025 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:07,238 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:07,238 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:17,511 - INFO - Conexão OK | Bloco: 48281763 | BNB: 0.0668
+2025-04-12 00:05:17,511 - INFO - Conexão OK | Bloco: 48281763 | BNB: 0.0668
+2025-04-12 00:05:18,330 - INFO - PancakeSwap: 58.5039 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:18,330 - INFO - PancakeSwap: 58.5039 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:18,331 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:18,331 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:28,607 - INFO - Conexão OK | Bloco: 48281767 | BNB: 0.0668
+2025-04-12 00:05:28,607 - INFO - Conexão OK | Bloco: 48281767 | BNB: 0.0668
+2025-04-12 00:05:29,429 - INFO - PancakeSwap: 58.5043 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:29,429 - INFO - PancakeSwap: 58.5043 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:29,430 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:29,430 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:32,374 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:05:32,374 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:05:39,702 - INFO - Conexão OK | Bloco: 48281770 | BNB: 0.0668
+2025-04-12 00:05:39,702 - INFO - Conexão OK | Bloco: 48281770 | BNB: 0.0668
+2025-04-12 00:05:40,516 - INFO - PancakeSwap: 58.4777 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:40,516 - INFO - PancakeSwap: 58.4777 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:40,518 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:40,518 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:50,794 - INFO - Conexão OK | Bloco: 48281774 | BNB: 0.0668
+2025-04-12 00:05:50,794 - INFO - Conexão OK | Bloco: 48281774 | BNB: 0.0668
+2025-04-12 00:05:51,611 - INFO - PancakeSwap: 58.4804 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:51,611 - INFO - PancakeSwap: 58.4804 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:05:51,612 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:05:51,612 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:01,884 - INFO - Conexão OK | Bloco: 48281778 | BNB: 0.0668
+2025-04-12 00:06:01,884 - INFO - Conexão OK | Bloco: 48281778 | BNB: 0.0668
+2025-04-12 00:06:02,704 - INFO - PancakeSwap: 58.4825 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:02,704 - INFO - PancakeSwap: 58.4825 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:02,704 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:02,704 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:12,981 - INFO - Conexão OK | Bloco: 48281782 | BNB: 0.0668
+2025-04-12 00:06:12,981 - INFO - Conexão OK | Bloco: 48281782 | BNB: 0.0668
+2025-04-12 00:06:13,797 - INFO - PancakeSwap: 58.4832 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:13,797 - INFO - PancakeSwap: 58.4832 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:13,797 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:13,797 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:23,168 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:06:23,168 - INFO - Iniciando bot de arbitragem triangular com 0.05 ETH
+2025-04-12 00:06:24,075 - INFO - Conexão OK | Bloco: 48281785 | BNB: 0.0668
+2025-04-12 00:06:24,075 - INFO - Conexão OK | Bloco: 48281785 | BNB: 0.0668
+2025-04-12 00:06:24,892 - INFO - PancakeSwap: 58.4781 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:24,892 - INFO - PancakeSwap: 58.4781 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:24,893 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:24,893 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:35,186 - INFO - Conexão OK | Bloco: 48281789 | BNB: 0.0668
+2025-04-12 00:06:35,186 - INFO - Conexão OK | Bloco: 48281789 | BNB: 0.0668
+2025-04-12 00:06:36,002 - INFO - PancakeSwap: 58.4782 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:36,002 - INFO - PancakeSwap: 58.4782 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:36,003 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:36,003 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:46,281 - INFO - Conexão OK | Bloco: 48281793 | BNB: 0.0668
+2025-04-12 00:06:46,281 - INFO - Conexão OK | Bloco: 48281793 | BNB: 0.0668
+2025-04-12 00:06:47,100 - INFO - PancakeSwap: 58.4819 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:47,100 - INFO - PancakeSwap: 58.4819 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:47,101 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:47,101 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:57,379 - INFO - Conexão OK | Bloco: 48281796 | BNB: 0.0668
+2025-04-12 00:06:57,379 - INFO - Conexão OK | Bloco: 48281796 | BNB: 0.0668
+2025-04-12 00:06:58,205 - INFO - PancakeSwap: 58.4772 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:58,205 - INFO - PancakeSwap: 58.4772 USDT | ApeSwap: 56.4750 USDT
+2025-04-12 00:06:58,206 - INFO - Sem oportunidade de arbitragem no momento.
+2025-04-12 00:06:58,206 - INFO - Sem oportunidade de arbitragem no momento.

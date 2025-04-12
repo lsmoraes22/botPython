@@ -16,7 +16,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
         RotatingFileHandler(
-            '/var/log/arbitrage.log',
+            'arbitrage.log',
             maxBytes=5*1024*1024,  # 5MB por arquivo
             backupCount=3          # Mantém 3 arquivos antigos
         ),

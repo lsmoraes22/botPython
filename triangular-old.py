@@ -82,9 +82,9 @@ def check_triangular_arbitrage():
         # Garante que o caminho não tenha tokens consecutivos iguais
         if len(set(path)) != len(path) - 1:  # permite apenas o primeiro e o último iguais
             continue
-        
-        time.sleep(1)  # Atraso para evitar chamadas excessivas à API
-        
+
+        time.sleep(0.3) # Espera para evitar rate limit
+
         amounts = get_amounts_out_safe(amount_in, path)
         if amounts:
             final_amount = amounts[-1]
@@ -102,3 +102,4 @@ if __name__ == "__main__":
             time.sleep(10)
     except KeyboardInterrupt:
         logger.info("Execução interrompida pelo usuário.")
+
